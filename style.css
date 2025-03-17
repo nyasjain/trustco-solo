@@ -1,0 +1,83 @@
+/* Global Styles */
+
+/* Apply box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'sans-serif'; /* Define a primary font family */
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+
+/* Define font sizes for headings */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Define default font size for paragraphs */
+p {
+    font-size: 1rem;
+}
+
+/* Set line height globally */
+body, h1, h2, h3, h4, h5, h6, p {
+    line-height: 1.6;
+}
+
+/* Colors */
+
+/* Define color palette using CSS variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #ffc107;
+}
+
+body {
+    color: var(--primary-color);
+    background-color: #fff; /* Background color */
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Margins and Padding */
+
+/* Default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Consistent margin for block elements */
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 1rem;
+}
