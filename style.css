@@ -2,82 +2,120 @@
 
 /* Apply box-sizing */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Define color palette using CSS variables */
+:root {
+  --text-color: #12141d;
+  --primary-color: #043a53;
+  --secondary-color: #f0b73f;
+  --gray-color: #92a7b0;
 }
 
 /* Body Styles */
 body {
-    font-family: 'sans-serif'; /* Define a primary font family */
-    margin: 0;
-    padding: 0;
+  font-family: "sans-serif"; /* Define a primary font family */
+  margin: 0;
+  padding: 0;
 }
 
 /* Typography */
-
 /* Define font sizes for headings */
 h1 {
-    font-size: 2.5rem;
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--text-color);
 }
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.75rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
-
-h5 {
-    font-size: 1.25rem;
-}
-
-h6 {
-    font-size: 1rem;
-}
-
 /* Define default font size for paragraphs */
 p {
-    font-size: 1rem;
-}
-
-/* Set line height globally */
-body, h1, h2, h3, h4, h5, h6, p {
-    line-height: 1.6;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 /* Colors */
-
-/* Define color palette using CSS variables */
-:root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --accent-color: #ffc107;
-}
-
 body {
-    color: var(--primary-color);
-    background-color: #fff; /* Background color */
+  color: var(--primary-color);
+  background-color: #fff; /* Background color */
 }
-
-/* Links */
-a {
-    color: var(--primary-color);
-    text-decoration: none;
+.heading-blue {
+  color: var(--primary-color);
 }
-
-/* Margins and Padding */
 
 /* Default margin and padding */
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Consistent margin for block elements */
-h1, h2, h3, h4, h5, h6, p {
-    margin-bottom: 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+/* Section: Hero */
+.hero {
+  padding: 100px 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.hero-content {
+  max-width: 709px;
+  text-align: center;
+}
+.hero-title {
+  margin-bottom: 16px;
+}
+.hero-links {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 0px 32px;
+}
+
+/* App buttons and links */
+.button {
+  outline: none;
+  border: 0px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+.button-primary {
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 16px 24px;
+  border-radius: 55px;
+}
+.button-secondary {
+  color: #fff;
+  background-color: var(--secondary-color);;
+  padding: 16px 24px;
+  border-radius: 55px;
+}
+.button-white {
+  color: var(--text-color);
+  background-color: #fff;
+  padding: 16px 24px;
+  border-radius: 55px;
+}
+.button-link {
+  color: var(--primary-color);
+  background-color: transparent;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+a:hover {
+  color: var(--primary-color);
 }
